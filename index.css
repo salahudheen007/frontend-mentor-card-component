@@ -81,7 +81,7 @@ img {
     }
 }
 
-@media (max-width:999px) {
+@media (max-width:799px) {
     #maindiv {
         flex-direction: column-reverse;
         padding: 15vh 12vw;
