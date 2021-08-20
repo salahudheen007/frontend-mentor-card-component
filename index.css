@@ -58,7 +58,7 @@ img {
     filter: grayscale(100%);
 }
 
-@media (min-width:700px) {
+@media (min-width:800px) {
     .text {
         max-width: 25em;
     }
@@ -81,7 +81,7 @@ img {
     }
 }
 
-@media (max-width:699px) {
+@media (max-width:999px) {
     #maindiv {
         flex-direction: column-reverse;
         padding: 15vh 12vw;
