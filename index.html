@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    #maindiv {
+      display: flex;
+      background-color: hsl(233, 47%, 7%);
+      
+    }
+
+
+    .font {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .color {
+      color: hsla(0, 0%, 100%, 0.6);
+    }
+
+    .para {
+
+      font-size: 16px;
+      margin-top: 2.5em;
+      line-height: 1.5em;
+    }
+
+    .heading,
+    .h2 {
+      color: white;
+    }
+
+    #insight {
+      color: hsl(277, 64%, 61%);
+    }
+
+    #divf {
+      background-color: hsl(244, 38%, 16%);
+      padding: 5vh 4vw;
+      display: flex;
+      flex-direction: column;
+      width: 50;
+    }
+
+    .div3s {
+      display: flex;
+    }
+
+
+
+    #divs {
+
+      background-color: hsl(277, 64%, 61%);
+      object-fit: contain;
+
+    }
+
+    img {
+      opacity: .6;
+      filter: grayscale(100%);
+     
+    }
+
+    @media (min-width:700px) {
+      .text {
+        max-width: 25em;
+      }
+
+      .div3s {
+        max-width: 25em;
+
+        flex-direction: row;
+      }
+
+      .div3s>* {
+        flex-basis: 100%;
+      }
+
+      #divs {
+        width: 50%;
+      }img{
+        width: 100%;
+      height: 100%;
+      }#maindiv{
+        padding: 20vh 22vw;
+      }
+    }
+
+    @media (max-width:699px) {
+      #maindiv {
+        flex-direction: column-reverse;
+        
+        padding: 15vh 12vw;
+      
+      }
+
+      .div3s {
+        flex-direction: column;
+      }
+
+      .div3s>* {
+        width: 100%;
+      }
+
+      .h2,
+      .p1,
+      .heading,
+      .para {
+        text-align: center;
+      }
+      img {
+       width: 100%;
+        height: 100%;
+      }.heading{
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="maindiv">
+    <div id="divf">
+      <div class="text">
+        <h1 class="heading font">Get <span id="insight">insights</span> that help your bussiness grow</h1>
+        <p class="para font color">Discover the benefits of data analytics and make better decisions regarding reveneu,
+          customer
+          experience and overall efficiency</p>
+      </div>
+      <div class="div3s">
+        <div class="three">
+          <h2 class="h2 font">10k+</h2>
+          <p class="p1 font color">COMPANIES</p>
+        </div>
+        <div class="three">
+          <h2 class="h2 font">314</h2>
+          <p class="p1 font color">TEMPLATES</p>
+        </div>
+        <div class="three">
+          <h2 class="h2 font">12M+</h2>
+          <p class="p1 font color">QUERIES</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="divs">
+      <img src="images/image-header-desktop.jpg" id="im1" alt="">
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Salahudheen k</a>.
+  </div>
+</body>
+
+</html>
